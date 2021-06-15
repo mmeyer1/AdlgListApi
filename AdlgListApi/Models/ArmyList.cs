@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace AdlgListApi.Models
 {
-    public class ArmyList
+    public class ArmyListOptions
     {
         private IEnumerable<Units> unitOptions;
         public string Desciption { get; set; }
