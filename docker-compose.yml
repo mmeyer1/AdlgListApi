@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  adlglistapi:
+    image: ${DOCKER_REGISTRY-}adlglistapi
+    build:
+      context: .
+      dockerfile: AdlgListApi/Dockerfile

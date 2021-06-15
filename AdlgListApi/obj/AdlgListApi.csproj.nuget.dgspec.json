@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\techn\\source\\repos\\AdlgListApi\\AdlgListApi\\AdlgListApi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\techn\\source\\repos\\AdlgListApi\\AdlgListApi\\AdlgListApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\techn\\source\\repos\\AdlgListApi\\AdlgListApi\\AdlgListApi.csproj",
+        "projectName": "AdlgListApi",
+        "projectPath": "C:\\Users\\techn\\source\\repos\\AdlgListApi\\AdlgListApi\\AdlgListApi.csproj",
+        "packagesPath": "C:\\Users\\techn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\techn\\source\\repos\\AdlgListApi\\AdlgListApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\techn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net50": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net50": {
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

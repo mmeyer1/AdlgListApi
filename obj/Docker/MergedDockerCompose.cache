@@ -1,0 +1,15 @@
+services:
+  adlglistapi:
+    build:
+      context: C:\Users\techn\source\repos\AdlgListApi
+      dockerfile: AdlgListApi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: adlglistapi
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\techn\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+version: '3.4'
