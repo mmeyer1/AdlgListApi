@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AdlgListApi.Handlers;
+using AdlgListApi.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +29,7 @@ namespace AdlgListApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IAdlgListHandler, AldgListHandler>();
+            services.AddSingleton<IListOptionRepository, InMemoryRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
