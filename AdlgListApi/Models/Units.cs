@@ -13,7 +13,5 @@ namespace AdlgListApi.Models
         public UnitTypes UnitType { get; set; }
         public IEnumerable<UnitModifiers> UnitModifiers { get => unitModifiers; set => unitModifiers = value; }
         public int Cost { get; set; }
-        public int Minimum { get; set; }
-        public int Maximum { get; set; }
     }
 }

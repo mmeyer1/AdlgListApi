@@ -28,8 +28,9 @@ namespace AdlgListApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IAdlgListHandler, AldgListHandler>();
+            services.AddScoped<IAdlgListOptionsHandler, AldgListOptionsHandler>();
             services.AddSingleton<IListOptionRepository, InMemoryRepository>();
+            services.AddSingleton<IUserArmyListRepostiory, InMemoryUserArmyListRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

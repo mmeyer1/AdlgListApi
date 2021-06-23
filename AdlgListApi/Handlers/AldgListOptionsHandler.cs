@@ -7,20 +7,27 @@ using System.Threading.Tasks;
 
 namespace AdlgListApi.Handlers
 {
-    public class AldgListHandler : IAdlgListHandler
+    public class AldgListOptionsHandler : IAdlgListOptionsHandler
     {
         private IListOptionRepository listOptionRepository;
 
-        public AldgListHandler(IListOptionRepository ListOptionRepostiory)
+        private IUserArmyListRepostiory userArmyListRepository;
+
+        public AldgListOptionsHandler(IListOptionRepository ListOptionRepostiory, IUserArmyListRepostiory UserArmyListRepository)
         {
             this.listOptionRepository = ListOptionRepostiory;
+            this.userArmyListRepository = UserArmyListRepository;
         }
         public async Task<ArmyListOptions> HandleGetOptionAsync(int listId)
         {
-            // Placeholder for now, plugin a repository pattern to grab the options
-            // from the persistence layer corresponding to the list later
             var armyListOption = listOptionRepository.GetArmyListOptions(listId);
             return armyListOption;
+        }
+
+        public async Task<UserArmyList> HandleGetUserArmyList(int userId, int listId)
+        {
+            var userArmyList = userArmyListRepository.GetUserArmyList(listId, userId);
+            return userArmyList;
         }
     }
 }

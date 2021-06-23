@@ -12,8 +12,8 @@ namespace AdlgListApi.Controllers
     [Route("[controller]")]
     public class AdlgListOptionsController
     {
-        private IAdlgListHandler ListHandler; 
-        public AdlgListOptionsController(IAdlgListHandler listHandler)
+        private IAdlgListOptionsHandler ListHandler; 
+        public AdlgListOptionsController(IAdlgListOptionsHandler listHandler)
         {
             ListHandler = listHandler;
         }
